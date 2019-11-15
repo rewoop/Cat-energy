@@ -3,25 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a href="#" class="page-header__logo">
-        <img class="page-header__logo-image" src="" width="191" height="39" alt="Логотип Кэт энерджи">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button type="button" class="main-nav__toggle">Открыть меню</button>
+        <a href="#" class="main-nav__toggle main-nav__toggle--open"><img src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню"></a>
+        <a href="#" class="main-nav__toggle main-nav__toggle--close"><img src="img/icon-close.svg" width="19" height="19" alt="Открыть меню"></a>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
+      <span class="page-main__background"></span>
       <h1 class="page-main__intro">Функциональное питание для котов</h1>
       <p class="page-main__slogan">Занялся собой? Займись котом!</p>
-      <img class="page-main__product-image" src="" width="280" height="270" alt="Фото товара на главной">
+      <img class="page-main__product-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фото товара на главной">
       <button class="page-main__create-programm default-btn" type="button">Подобрать программу</button>
       <section class="diet-programs">
         <h2 class="visually-hidden">Программы питания</h2>
@@ -37,7 +46,7 @@
         </section>
       </section>
       <section class="about-program">
-        <h2>Как это работает</h2>
+        <h2 class="about-programs__heading">Как это работает</h2>
         <ul class="about-program__list">
           <li class="about-program__item">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="about-program__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -46,7 +55,7 @@
         </ul>
       </section>
       <section class="living-example">
-        <h2>Живой пример</h2>
+        <h2 class="living-example__heading">Живой пример</h2>
         <p class="living-example__program-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <section class="living-example__width">
           <h3>5 кг</h3>
@@ -72,10 +81,10 @@
       <section class="contact-info">
         <h2 class="contact-info__heading">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contact-info__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="contact-info__map" src="#" width="320" height="362" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="contact-info__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </section>
       <a class="page-footer__logo" href="#">
-        <img class="page-footer__logo-image" src="" width="128" height="24" alt="Логотип Кэт энерджи">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -93,7 +102,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="" width="27" height="34" alt="Логотип HTML Academy">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
