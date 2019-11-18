@@ -65,23 +65,29 @@
         <div class="living-example__wrapper">
           <h2 class="living-example__heading">Живой пример</h2>
           <p class="living-example__program-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <section class="living-example__weight weight-time">
-            <h3 class="weight-time__heading">5 кг</h3>
-            <p class="weight-time__description">снижение веса</p>
-          </section>
-          <section class="living-example__time weight-time">
-            <h3 class="weight-time__heading">60 дней</h3>
-            <p class="weight-time__description">затрачено времени</p>
-          </section>
+          <div class="living-example__weight-wrapper">
+            <section class="living-example__weight weight-time">
+              <h3 class="weight-time__heading">5 кг</h3>
+              <span class="weight-time__description-background"></span>
+              <p class="weight-time__description">снижение веса</p>
+            </section>
+            <section class="living-example__time weight-time">
+              <h3 class="weight-time__heading">60 дней</h3>
+              <span class="weight-time__description-background"></span>
+              <p class="weight-time__description">затрачено времени</p>
+            </section>
+          </div>
           <p class="living-example__program-price">Затраты на питание: 15 000 руб.</p>
           <section class="living-example__slider before-after">
             <h3 class="visually-hidden">Фотографии результата замены корма</h3>
             <img src="img/before-mobile@1x.png" width="311" height="232" alt="Фотография кота Бориса до использования Cat Energy Slim.">
-            <button class="before-after__btn before-after__btn--before" type="button" name="before">Было</button>
-            <div class="before-after__strip">
-              <span class="before-after__switch"></span>
+            <div class="before-after__btn-wrapper">
+              <button class="before-after__btn before-after__btn--before" type="button" name="before">Было</button>
+              <div class="before-after__strip">
+                <span class="before-after__switch"></span>
+              </div>
+              <button class="before-after__btn before-after__btn--after" type="button" name="after">Стало</button>
             </div>
-            <button class="before-after__btn before-after__btn--after" type="button" name="after">Стало</button>
           </section>
         </div>
       </section>
@@ -98,6 +104,7 @@
         <a class="page-footer__logo" href="#">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
         </a>
+        <span class="page-footer__line"></span>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -111,6 +118,7 @@
             </li>
           </ul>
         </div>
+        <span class="page-footer__line"></span>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
