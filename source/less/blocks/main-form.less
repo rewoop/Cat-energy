@@ -5,6 +5,9 @@
 .main-form__fieldset {
   .mp-null;
   border: none;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-form__send-form {
@@ -12,12 +15,31 @@
   color: #111111;
   line-height: 1.29;
   margin: 0;
+  margin-bottom: 37px;
+  max-width: 226px;
 }
 
 .main-form__label {
   .text-style-2;
   color: #222222;
   line-height: 1.13;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &--text,
+  &--email {
+    margin-bottom: 14px;
+  }
+
+  &--radio,
+  &--checkbox {
+    margin-bottom: 12px;
+  }
+
+  &--checkbox:last-child {
+    margin-bottom: 34px;
+  }
 }
 
 .main-form__input::placeholder,
@@ -36,19 +58,52 @@
   font-style: normal;
   color: #444444;
   line-height: 1.13;
+  border: 1px solid #cdcdcd;
+}
+
+.main-form__input {
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+
+  &--text {
+    margin-left: 16px;
+    min-height: 43px;
+    padding-left: 16px;
+  }
+
+  &--radio,
+  &--checkbox {
+    flex-grow: 0;
+    margin-right: 12px;
+  }
+
+  &--email {
+    margin-left: 12px;
+    min-height: 43px;
+    padding-left: 16px;
+  }
+
+  &--tel {
+    margin-left: 10px;
+    min-height: 43px;
+    padding-left: 16px;
+  }
 }
 
 .main-form__comments {
-  width: 280px;
-  height: 150px;
+  width: 252px;
+  height: 122px;
   border: 1px solid #cdcdcd;
   resize: none;
+  padding: 13px;
 }
 
 .main-form__legend {
   .text-style-6;
   line-height: 1;
   margin: 0;
+  padding: 31px 0;
 }
 
 .main-form__required-fields {
@@ -56,4 +111,15 @@
   line-height: 1.14;
   color: #444444;
   margin: 0;
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
+
+.main-form__program-wrapper {
+  width: 278px;
+  padding: 22px 20px 22px 20px;
+  margin: 9px auto 0 auto;
+  border: 1px solid #ededed;
+  min-height: 112px;
+  display: flex;
 }
