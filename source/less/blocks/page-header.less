@@ -24,3 +24,48 @@
 .page-header__toggle {
   cursor: pointer;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 708px;
+    margin: 0 auto;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 30px 60px 30px;
+  }
+
+  .page-header__logo,
+  .page-header__logo-image,
+  .page-header__wrapper {
+    width: 174px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1220px;
+    padding: 53px 110px 34px 110px;
+
+//   ===ВРЕМЕННО=== //
+    background-color: tomato;
+//   ===/ ВРЕМЕННО=== //
+  }
+
+  .page-header__logo,
+  .page-header__logo-image,
+  .page-header__wrapper {
+    width: 203px;
+    height: 60px;
+  }
+}
