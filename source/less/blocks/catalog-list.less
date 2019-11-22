@@ -1,4 +1,41 @@
 .catalog-list {
   .mp-null;
   list-style: none;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.catalog-list__item {
+  border: 1px solid #ededed;
+  padding: 0 20px 25px 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-height: 183px;
+}
+
+.catalog-list__item-image {
+  width: 140px;
+  height: 144px;
+}
+
+.catalog-list__heading {
+  max-width: 75px;
+}
+
+.catalog-list__item:not(:first-child) {
+  margin-top: -1px;
+}
+
+.catalog-list__table-wrapper {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.catalog-list__properties {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
