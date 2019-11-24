@@ -17,9 +17,11 @@
 .living-example__program-price {
   .text-style-5;
   line-height: 1.43;
-  margin: 38px 0;
+  margin: 38px 45px;
+  min-width: 189px;
   color: #111111;
   text-align: center;
+  align-self: center;
 }
 
 .living-example__wrapper {
@@ -30,4 +32,42 @@
 .living-example__weight-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example {
+    background-color: #ffffff;
+  }
+
+  .living-example__wrapper {
+    width: 768px;
+    padding: 50px 30px;
+    padding-bottom: 0;
+  }
+
+  .living-example__heading {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .living-example__program-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 73px 0 50px 0;
+    max-width: 676px;
+  }
+
+  .living-example__program-price {
+    width: 174px;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .living-example__weight-wrapper {
+    justify-content: flex-start;
+  }
 }
