@@ -10,7 +10,9 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
+          <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
+          <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width="174" height="59" alt="Логотип Кэт энерджи">
+          <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-desktop.svg" width="203" height="60" alt="Логотип Кэт энерджи">
         </a>
         <a href="#" class="page-header__toggle page-header__toggle">
           <img src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню">
@@ -31,14 +33,14 @@
       </nav>
     </header>
     <main class="page-main">
-      <span class="page-main__background"></span>
       <div class="page-main__wrapper">
+        <span class="page-main__background"></span>
         <div class="page-main__heading-section">
           <h1 class="page-main__intro">Функциональное питание для котов</h1>
           <p class="page-main__slogan">Занялся собой? Займись котом!</p>
           <img class="page-main__product-image page-main__product-image--mobile" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фото товара на главной">
           <img class="page-main__product-image page-main__product-image--tablet" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Фото товара на главной">
-          <img class="page-main__product-image page-main__product-image--desktop" src="img/index-can-mobile@1x.png" width="552" height="499" alt="Фото товара на главной">
+          <img class="page-main__product-image page-main__product-image--desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="Фото товара на главной">
           <button class="default-btn page-main__create-programm" type="button">Подобрать программу</button>
         </div>
         <section class="diet-programs">
@@ -74,9 +76,11 @@
           </ul>
         </section>
       </div>
+      <span class="page-main__line"></span>
       <section class="living-example">
+        <h2 class="living-example__heading living-example__heading--desktop">Живой пример</h2>
         <div class="living-example__wrapper">
-          <h2 class="living-example__heading">Живой пример</h2>
+          <h2 class="living-example__heading living-example__heading--mobile-tablet">Живой пример</h2>
           <p class="living-example__program-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="living-example__weight-wrapper">
             <section class="living-example__weight weight-time">
@@ -89,7 +93,7 @@
               <span class="weight-time__description-background weight-time__description-background--second"></span>
               <p class="weight-time__description">затрачено времени</p>
             </section>
-            <p class="living-example__program-price">Затраты на питание: 15 000 руб.</p>
+            <p class="living-example__program-price">Затраты на питание: <span>15 000 руб.</span></p>
           </div>
         </div>
         <section class="living-example__slider before-after">

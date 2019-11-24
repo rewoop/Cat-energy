@@ -72,3 +72,31 @@
     display: none;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .diet-programs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .diet-programs__item {
+    min-width: 570px;
+    min-height: 372px;
+    padding: 40px 52px;
+    margin-bottom: 75px;
+  }
+
+  .diet-programs__description {
+    margin-top: 45px;
+    margin-bottom: 35px;
+
+    &--slim {
+      max-width: 464px;
+    }
+
+    &--mass {
+      max-width: 446px;
+    }
+  }
+}

@@ -24,6 +24,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .about-program {
+    padding: 0;
+  }
+
   .about-programs__heading {
     font-size: 60px;
     line-height: 1;
@@ -46,5 +50,17 @@
 
   .about-program__item-wrapper {
     max-width: 245px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-programs__heading {
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+
+  .about-program__item {
+    width: 300px;
+    min-height: 230px;
   }
 }
