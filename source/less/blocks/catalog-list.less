@@ -17,6 +17,15 @@
 .catalog-list__item-image {
   width: 140px;
   height: 144px;
+
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .catalog-list__heading {
@@ -60,6 +69,24 @@
     min-height: 431px;
     width: 324px;
     margin-bottom: 140px;
+    position: relative;
+  }
+
+  .catalog-list__item-image {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 305px;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
   }
 
   .catalog-list__table-wrapper {
