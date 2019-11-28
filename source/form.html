@@ -46,7 +46,7 @@
           </fieldset>
         </div>
         <div class="main-form__program-wrapper">
-          <fieldset class="main-form__fieldset">
+          <fieldset class="main-form__fieldset main-form__fieldset--radio">
             <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="slim" checked>Похудение</label>
             <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="pro">Набор массы</label>
             <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="idk">Не знаю (Нужен ваш совет)</label>
@@ -63,14 +63,18 @@
             <textarea class="main-form__comments" name="comment" rows="10" cols="38" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <legend class="main-form__legend">Дополнительно</legend>
-            <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="sugar" checked> Сахарозаменитель</label>
-            <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="water"> Питьевая вода</label>
-            <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="milk"> Молоко</label>
-            <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="vitamins"> Витамины</label>
+            <legend class="main-form__legend main-form__legend--extra">Дополнительно</legend>
+            <div class="main-form__fieldset-wrapper">
+              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="sugar" checked> Сахарозаменитель</label>
+              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="water"> Питьевая вода</label>
+              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="milk"> Молоко</label>
+              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="vitamins"> Витамины</label>
+            </div>
           </fieldset>
-          <button type="submit" class="main-form__btn-show default-btn">Отправить заявку</button>
-          <p class="main-form__required-fields">* — Обязательные поля</p>
+          <div class="main-form__submit-section">
+            <button type="submit" class="default-btn main-form__btn-show">Отправить заявку</button>
+            <p class="main-form__required-fields">* — Обязательные поля</p>
+          </div>
         </div>
       </form>
     </main>
