@@ -52,3 +52,28 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .properties {
+    min-width: 170px;
+
+    &--goods {
+      min-width: 285px;
+      margin-right: 40px;
+    }
+  }
+
+  .properties__string {
+    &--goods {
+      justify-content: space-between;
+    }
+  }
+
+  .properties__value {
+    &--goods {
+      min-width: 45px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}

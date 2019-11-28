@@ -106,3 +106,31 @@
     height: 40px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .catalog-list {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    margin-top: 160px;
+  }
+
+  .catalog-list__item {
+    width: 245px;
+  }
+
+  .catalog-list__item-image {
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+  }
+
+  .catalog-list__order-btn {
+    width: 170px;
+  }
+}
