@@ -37,8 +37,8 @@
         <h1 class="page-main__heading">Подбор программы</h1>
       </div>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="page-main__wrapper">
-          <fieldset class="main-form__fieldset">
+        <div class="page-main__wrapper main-form__form-wrapper main-form__form-wrapper--form">
+          <fieldset class="main-form__fieldset main-form__fieldset--form">
             <p class="main-form__send-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <label class="main-form__label main-form__label--text">Имя:*<input class="main-form__input main-form__input--text" type="text" name="name" placeholder="Барсик"></label>
             <label class="main-form__label main-form__label--text">Вес (кг):*<input class="main-form__input main-form__input--text" type="text" name="weight" placeholder="7"></label>
@@ -52,11 +52,13 @@
             <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="idk">Не знаю (Нужен ваш совет)</label>
           </fieldset>
         </div>
-        <div class="page-main__wrapper">
+        <div class="page-main__wrapper main-form__form-wrapper">
           <fieldset class="main-form__fieldset">
             <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
-            <label class="main-form__label main-form__label--email">E-mail:*<input class="main-form__input main-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
-            <label class="main-form__label">Телефон:*<input class="main-form__input main-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
+            <div class="main-form__contacts-wrapper">
+              <label class="main-form__label main-form__label--email">E-mail:*<input class="main-form__input main-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
+              <label class="main-form__label main-form__label--tel">Телефон:*<input class="main-form__input main-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
+          </dividing>
           </fieldset>
           <fieldset class="main-form__fieldset">
             <legend class="main-form__legend">Комментарий</legend>
