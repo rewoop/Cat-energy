@@ -10,15 +10,7 @@
 
 .page-header__logo-image {
   background-color: #ffffff;
-
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
+  display: block;
 }
 
 .page-header__wrapper {
@@ -57,17 +49,6 @@
     border: none;
   }
 
-  .page-header__logo-image {
-    &--tablet {
-      display: block;
-    }
-
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
-  }
-
   .page-header__toggle {
     display: none;
   }
@@ -75,8 +56,8 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 1440px;
-    padding: 53px 110px 34px 110px;
+    width: 1300px;
+    padding: 53px 40px 34px 40px;
     background-color: transparent;
   }
 
@@ -85,16 +66,5 @@
   .page-header__wrapper {
     width: 203px;
     height: 60px;
-  }
-
-  .page-header__logo-image {
-    &--desktop {
-      display: block;
-    }
-
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
   }
 }

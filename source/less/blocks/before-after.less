@@ -10,9 +10,7 @@
     display: block;
   }
 
-  &--before-tablet-desktop,
-  &--after-mobile,
-  &--after-tablet-desktop {
+  &--after-mobile {
     display: none;
   }
 }
@@ -56,13 +54,14 @@
 
 @media (min-width: @tablet-width) {
   .before-after {
-    width: 768px;
-    padding: 0;
-    margin-top: 252px;
+    width: auto;
+    background-color: #f2f2f2;
   }
 
   .before-after__wrapper {
-    background-color: #f2f2f2;
+    width: 768px;
+    padding: 0;
+    margin: 0 auto;
     min-height: 462px;
     display: flex;
     flex-direction: column;
@@ -78,16 +77,6 @@
     top: -169px;
     left: 50%;
     margin-left: -345px;
-
-    &--before-tablet-desktop {
-      display: block;
-    }
-
-    &--after-mobile,
-    &--before-mobile,
-    &--after-tablet-desktop {
-      display: none;
-    }
   }
 
   .before-after__btn-wrapper {
@@ -101,8 +90,7 @@
     font-size: 20px;
     line-height: 1;
     padding-bottom: 6px;
-    border-bottom: 1px dotted;
-    border-color: rgba(1, 1, 1, 0.23);
+    border-bottom: 1px dotted rgba(1, 1, 1, 0.23);
   }
 
   .before-after__strip {
@@ -147,6 +135,10 @@
 
 @media (min-width: @desktop-width) {
   .before-after {
-    margin: 0;
+    .mp-null;
+  }
+
+  .before-after__image {
+    top: -190px;
   }
 }

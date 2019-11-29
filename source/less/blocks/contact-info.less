@@ -23,19 +23,6 @@
   max-width: 135px;
 }
 
-.contact-info__map {
-  margin: 0 auto;
-
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-}
-
 .contact-info__wrapper {
   .wrapper;
   display: flex;
@@ -69,22 +56,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .contact-info__map {
-    &--tablet {
-      display: block;
-    }
-
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
   .contact-info {
-    width: 1440px;
+    width: 1300px;
     margin: 0 auto;
     position: relative;
   }
@@ -100,16 +76,5 @@
 
   .contact-info__address {
     text-align: left;
-  }
-
-  .contact-info__map {
-    &--desktop {
-      display: block;
-    }
-
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
   }
 }
