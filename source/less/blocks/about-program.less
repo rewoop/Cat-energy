@@ -17,3 +17,50 @@
   color: #444444;
   line-height: 1.29;
 }
+
+.about-program__item-wrapper {
+  max-width: 194px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .about-program {
+    padding: 0;
+  }
+
+  .about-programs__heading {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+
+  .about-program__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-program__item {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 354px;
+    min-height: 230px;
+  }
+
+  .about-program__item-wrapper {
+    max-width: 245px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-programs__heading {
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+
+  .about-program__item {
+    width: 300px;
+    min-height: 230px;
+  }
+}

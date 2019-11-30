@@ -35,6 +35,10 @@
   padding: 14px 0 28px 0;
 }
 
+.page-main__product-image {
+  display: block;
+}
+
 .page-main__create-programm {
   font-size: 14px;
   line-height: 1.29;
@@ -52,4 +56,114 @@
   align-items: center;
   padding-top: 29px;
   padding-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__line {
+    width: 768px;
+    margin: 0 auto;
+    border: 1px solid #e6e6e6;
+    display: block;
+  }
+
+  .page-main__background {
+    display: none;
+  }
+
+  .page-main__wrapper {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .page-main__heading {
+    padding: 0;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .page-main__heading-section {
+    min-height: 800px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 90px;
+    position: relative;
+  }
+
+  .page-main__intro {
+    font-size: 60px;
+    color: #111111;
+    text-align: left;
+    margin-bottom: 33px;
+    max-width: 528px;
+  }
+
+  .page-main__slogan {
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 48px;
+  }
+
+  .page-main__product-image {
+    display: block;
+    position: absolute;
+    top: 192px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .page-main__create-programm {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__line {
+    display: none;
+  }
+
+  .page-main__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+    padding-top: 40px;
+
+    &--index {
+      padding-top: 73px;
+    }
+
+    &--catalog {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .page-main__background {
+    display: block;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 696px;
+    position: absolute;
+    z-index: -1;
+    top: -147px;
+    right: 0;
+    margin: 0;
+  }
+
+  .page-main__heading-section {
+    min-height: 554px;
+    padding: 0 80px;
+  }
+
+  .page-main__product-image {
+    top: -84px;
+    left: 50%;
+    margin-left: -164px;
+    z-index: 1;
+  }
+
+  .page-main__living-example-background {
+    width: auto;
+    background-color: #f2f2f2;
+  }
 }

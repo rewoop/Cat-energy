@@ -14,3 +14,66 @@
   line-height: 1;
   border: none;
 }
+
+@media (min-width: @tablet-width) {
+  .properties {
+    min-width: 250px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+
+    &--goods {
+      margin: 0;
+    }
+  }
+
+  .properties__string {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 0;
+
+    &--goods {
+      border: none;
+      padding: 0;
+      justify-content: flex-end;
+    }
+  }
+
+  .properties__field,
+  .properties__value {
+    font-size: 16px;
+
+    &--goods {
+      text-align: right;
+    }
+  }
+
+  .properties__value {
+    &--goods {
+      margin-left: 53px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .properties {
+    min-width: 170px;
+
+    &--goods {
+      min-width: 285px;
+      margin-right: 40px;
+    }
+  }
+
+  .properties__string {
+    &--goods {
+      justify-content: space-between;
+    }
+  }
+
+  .properties__value {
+    &--goods {
+      min-width: 45px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}

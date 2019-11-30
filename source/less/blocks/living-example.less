@@ -5,30 +5,125 @@
 .living-example__heading {
   .text-style-h2;
   margin: 0;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
 }
 
 .living-example__program-description {
   .text-style-3;
   color: #444444;
   line-height: 1.29;
-  margin: 20px 0 25px 0;
+  margin: 68px 0 25px 0;
 }
 
 .living-example__program-price {
   .text-style-5;
   line-height: 1.43;
-  margin: 38px 0;
+  margin: 38px 45px;
+  min-width: 189px;
   color: #111111;
   text-align: center;
+  align-self: center;
 }
 
 .living-example__wrapper {
   .wrapper;
   padding-top: 20px;
-  padding-bottom: 36px;
+  position: relative;
 }
 
 .living-example__weight-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example {
+    background-color: #ffffff;
+  }
+
+  .living-example__wrapper {
+    width: 768px;
+    padding: 140px 30px;
+    padding-bottom: 0;
+  }
+
+  .living-example__heading {
+    font-size: 60px;
+    line-height: 1;
+    top: 39px;
+    left: 30px;
+  }
+
+  .living-example__program-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 50px 0;
+    max-width: 676px;
+  }
+
+  .living-example__program-price {
+    width: 174px;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .living-example__weight-wrapper {
+    justify-content: flex-start;
+  }
+
+  .living-example__slider {
+    margin-top: 252px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 215px;
+    background-color: #f2f2f2;
+  }
+
+  .living-example__wrapper {
+    width: 1300px;
+    min-height: 462px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
+
+  .living-example__heading {
+    top: -132px;
+    left: 40px;
+  }
+
+  .living-example__program-description {
+    margin: 70px 0 65px 0;
+    max-width: 432px;
+  }
+
+  .living-example__program-price {
+    width: 326px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+  }
+
+  .living-example__weight-wrapper {
+    width: 430px;
+  }
+
+  .living-example__slider {
+    margin-top: 0;
+  }
 }

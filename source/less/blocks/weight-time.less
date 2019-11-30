@@ -1,12 +1,13 @@
 .weight-time {
   border: 1px solid #cdcdcd;
-  min-width: 124px;
+  width: 124px;
   height: 56px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  border-radius: 3px;
 }
 
 .weight-time__heading {
@@ -36,4 +37,42 @@
   background-color: #f2f2f2;
   position: absolute;
   bottom: -10px;
+}
+
+@media (min-width: @tablet-width) {
+  .weight-time {
+    width: 162px;
+    height: 72px;
+    margin-right: 42px;
+  }
+
+  .weight-time__heading {
+    font-size: 30px;
+  }
+
+  .weight-time__description {
+    font-size: 14px;
+    min-width: 128px;
+    bottom: -6px;
+    margin-left: -64px;
+  }
+
+  .weight-time__description-background {
+    min-height: 27px;
+    background-color: #ffffff;
+
+    &--first {
+      width: 114px;
+    }
+
+    &--second {
+      width: 142px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .weight-time__description-background {
+    background-color: #f2f2f2;
+  }
 }
