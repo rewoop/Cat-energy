@@ -8,7 +8,7 @@
   width: 128px;
   height: 24px;
   display: inline-block;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 .page-footer__wrapper {
@@ -25,22 +25,30 @@
 
 .page-footer__map {
   width: 320px;
+  height: 362px;
   margin: 0 auto;
   display: block;
   position: relative;
 
+  & img {
+    width: 320px;
+    height: 362px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
   &::after {
     content: "";
     display: block;
-    width: 55px;
-    height: 53px;
+    width: 57px;
+    height: 54px;
     background-image: url("../img/map-pin.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: -20px 0 0 -29px;
+    margin: -39px 0 0 -28px;
   }
 }
 
