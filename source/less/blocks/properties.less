@@ -1,18 +1,29 @@
 .properties {
-  min-width: 138px;
+  min-width: 145px;
+  margin-left: -1px;
 }
 
 .properties__string {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -1px;
+
+  &--goods {
+    margin: 0 -4px;
+  }
 }
 
 .properties__field,
 .properties__value {
   .text-style-8;
   color: #444444;
-  line-height: 1;
+  line-height: 1.33;
   border: none;
+
+  &--goods {
+    font-size: 14px;
+    line-height: 1;
+  }
 }
 
 @media (min-width: @tablet-width) {
