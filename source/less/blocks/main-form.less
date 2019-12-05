@@ -30,6 +30,10 @@
 
   &--text {
     margin-bottom: 14px;
+
+    &:nth-of-type(3) > input {
+      max-width: 172px;
+    }
   }
 
   &--email {
@@ -111,9 +115,12 @@
 .main-form__comments::placeholder {
   .text-style-2;
   color: #444444;
-  line-height: 1.13;
+  line-height: 43px;
 }
 
+.main-form__comments::placeholder {
+  line-height: 1.13;
+}
 
 .main-form__input,
 .main-form__comments {
