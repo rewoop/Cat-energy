@@ -5,6 +5,7 @@
 .about-programs__heading {
   .text-style-h2;
   margin: 0;
+  margin-bottom: 28px;
 }
 
 .about-program__list {
@@ -16,10 +17,33 @@
   .text-style-3;
   color: #444444;
   line-height: 1.29;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    margin-right: 20px;
+  }
+}
+
+.about-program__item-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -25px;
 }
 
 .about-program__item-wrapper {
-  max-width: 194px;
+  max-width: 196px;
   display: block;
 }
 

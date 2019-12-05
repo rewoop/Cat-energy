@@ -47,30 +47,37 @@
         </div>
         <div class="main-form__program-wrapper">
           <fieldset class="main-form__fieldset main-form__fieldset--radio">
-            <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="slim" checked>Похудение</label>
-            <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="pro">Набор массы</label>
-            <label class="main-form__label main-form__label--radio"><input class="main-form__input main-form__input--radio" type="radio" name="program" value="idk">Не знаю (Нужен ваш совет)</label>
+            <input class="main-form__input main-form__input--radio" type="radio" name="program" value="slim" id="slim-radio" checked>
+            <label for="slim-radio" class="main-form__label main-form__label--radio">Похудение</label>
+            <input class="main-form__input main-form__input--radio" type="radio" name="program" value="pro" id="pro-radio">
+            <label class="main-form__label main-form__label--radio" for="pro-radio">Набор массы</label>
+            <input class="main-form__input main-form__input--radio" type="radio" name="program" value="idk" id="idk-radio">
+            <label class="main-form__label main-form__label--radio" for="idk-radio">Не знаю (Нужен ваш совет)</label>
           </fieldset>
         </div>
         <div class="page-main__wrapper main-form__form-wrapper">
           <fieldset class="main-form__fieldset">
-            <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="main-form__legend main-form__legend--contacts">Контактные данные (владельца кота)</legend>
             <div class="main-form__contacts-wrapper">
               <label class="main-form__label main-form__label--email">E-mail:*<input class="main-form__input main-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
               <label class="main-form__label main-form__label--tel">Телефон:*<input class="main-form__input main-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
           </dividing>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <legend class="main-form__legend">Комментарий</legend>
+            <legend class="main-form__legend main-form__legend--comment">Комментарий</legend>
             <textarea class="main-form__comments" name="comment" rows="10" cols="38" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="main-form__fieldset">
             <legend class="main-form__legend main-form__legend--extra">Дополнительно</legend>
             <div class="main-form__fieldset-wrapper">
-              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="sugar" checked> Сахарозаменитель</label>
-              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="water"> Питьевая вода</label>
-              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="milk"> Молоко</label>
-              <label class="main-form__label main-form__label--checkbox"><input class="main-form__input main-form__input--checkbox" type="checkbox" name="vitamins"> Витамины</label>
+              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="sugar" id="sugar-checkbox" checked>
+              <label class="main-form__label main-form__label--checkbox" for="sugar-checkbox"> Сахарозаменитель</label>
+              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="water" id="water-checkbox">
+              <label class="main-form__label main-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
+              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="milk" id="milk-checkbox">
+              <label class="main-form__label main-form__label--checkbox" for="milk-checkbox">Молоко</label>
+              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="vitamins" id="vitamins-checkbox">
+              <label class="main-form__label main-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
             </div>
           </fieldset>
           <div class="main-form__submit-section">
@@ -87,9 +94,11 @@
           <p class="contact-info__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </section>
-      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <!-- <img class="page-footer__map" src="img/bg-map-tablet@1x.png" width="768" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <img class="page-footer__map" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
+      <div class="page-footer__map">
+        <img class="page-footer__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <!-- <img class="page-footer__map" src="img/bg-map-tablet@1x.png" width="768" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="page-footer__map" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
+      </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
@@ -97,13 +106,13 @@
         <span class="page-footer__line"></span>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item">
+            <li class="social__item social__item--vk">
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item--inst">
               <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy"></a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item--fb">
               <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"></a>
             </li>
           </ul>

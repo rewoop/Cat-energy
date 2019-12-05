@@ -1,5 +1,9 @@
 .additional-goods {
-  padding: 31px 0 22px 0;
+  padding: 28px 0 25px 0;
+
+  & > .additional-goods__line {
+    margin: 20px 0 15px 0;
+  }
 }
 
 .additional-goods__h2 {
@@ -7,6 +11,14 @@
   line-height: 1;
   margin: 0;
   padding-bottom: 13px;
+  position: relative;
+
+  &::after {
+    .green-line-mobile;
+    width: 53px;
+    right: -20px;
+    top: 13px;
+  }
 }
 
 .additional-goods__list {
@@ -24,11 +36,11 @@
 .additional-goods__line {
   .dividing-line;
   width: 280px;
-  margin: 17px 0 14px 0;
+  margin: 17px 0 13px 0;
 }
 
 .additional-goods__properties {
-  margin: 10px 0;
+  margin: 8px 0 12px 0;
   width: 280px;
 }
 
