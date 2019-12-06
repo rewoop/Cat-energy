@@ -19,7 +19,10 @@
 }
 
 .page-footer__line {
-  .dividing-line;
+  display: block;
+  height: 1px;
+  background-color: #111111;
+  opacity: 0.1;
   width: 280px;
 }
 
@@ -53,11 +56,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  // .page-footer {
-  //   width: 768px;
-  //   margin: 0 auto;
-  // }
-
   .page-footer__wrapper {
     width: 768px;
     min-height: 150px;
@@ -79,6 +77,13 @@
 
   .page-footer__map {
     width: 768px;
+    height: 396px;
+
+    &::after {
+      width: 120px;
+      height: 106px;
+      margin: -51px 0 0 -60px;
+    }
   }
 }
 

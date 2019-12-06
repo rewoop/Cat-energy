@@ -77,7 +77,10 @@
 }
 
 .diet-programs__line {
-  .dividing-line;
+  display: block;
+  height: 1px;
+  background-color: #111111;
+  opacity: 0.1;
   width: 240px;
   margin-top: 21px;
   margin-bottom: 20px;
@@ -93,6 +96,38 @@
   .diet-programs__heading {
     font-size: 36px;
     line-height: 1;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      margin-right: 0;
+      position: absolute;
+      top: 40%;
+      right: 0;
+    }
+  }
+
+  .diet-programs__heading-icon {
+    top: auto;
+
+    &--slim {
+      width: 141px;
+      height: 194px;
+      margin-top: 0;
+      left: auto;
+      right: 30px;
+      top: 3px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 113px;
+      margin-top: 0;
+      left: auto;
+      right: -34px;
+      top: 57px;
+    }
   }
 
   .diet-programs__description {
@@ -113,6 +148,10 @@
   .diet-programs__link {
     font-size: 20px;
     height: 18px;
+
+    &::after {
+      margin-left: 21px;
+    }
   }
 
   .diet-programs__line {
