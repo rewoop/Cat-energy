@@ -55,6 +55,18 @@
   .additional-goods__h2 {
     font-size: 36px;
     padding: 0;
+    width: 413px;
+    background-color: #ffffff;
+    text-align: center;
+
+    &::after {
+      width: 768px;
+      right: auto;
+      left: -30px;
+      top: 50%;
+      margin-top: 4px;
+      z-index: -1;
+    }
   }
 
   .additional-goods__line {
@@ -62,7 +74,7 @@
   }
 
   .additional-goods__list {
-    margin-top: 77px;
+    margin-top: 81px;
   }
 
   .additional-goods__item {
@@ -73,11 +85,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 38px;
+    padding: 0 37px;
+    padding-top: 12px;
+    padding-bottom: 16px;
 
     &:not(:first-child) {
       margin-top: -1px;
     }
+  }
+
+  .additional-goods__properties {
+    margin: 0;
+    margin-top: 3px;
   }
 
   .additional-goods__heading {
