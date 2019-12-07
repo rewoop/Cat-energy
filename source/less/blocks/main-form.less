@@ -360,7 +360,11 @@
     }
   }
 
-  .main-form__input::placeholder,
+  .main-form__input::placeholder {
+    font-size: 20px;
+    line-height: 48px;
+  }
+
   .main-form__comments::placeholder {
     font-size: 20px;
     line-height: 1;
@@ -403,7 +407,6 @@
       margin-left: 19px;
       min-height: 52px;
       padding: 0 20px;
-
     }
 
     &--tel {
@@ -528,10 +531,14 @@
     width: 1300px;
     padding: 0 40px;
     margin: 0 auto;
-    padding-top: 53px;
+    padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .main-form__send-form {
+    margin-bottom: 65px;
   }
 
   .main-form__fieldset {
@@ -564,19 +571,42 @@
       margin-bottom: 0;
     }
 
-    &--email,
+    &--email {
+      width: 570px;
+      margin: 0;
+
+      &::after {
+        right: 20px;
+      }
+    }
+
     &--tel {
       width: 570px;
       margin: 0;
+
+      &::after {
+        right: 18px;
+      }
     }
 
     &--checkbox {
       margin: 0;
-      min-width: auto;
+      min-width: 325px;
+
+      &--before {
+        margin-right: 18px;
+      }
     }
 
     &--checkbox:last-child {
       margin-bottom: 0;
+      min-width: 245px;
+    }
+
+    &--radio {
+      &::before {
+        margin-right: 18px;
+      }
     }
   }
 
@@ -595,19 +625,55 @@
   }
 
   .main-form__legend {
+    padding-top: 69px;
+    padding-bottom: 76px;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+      top: 50%;
+    }
+
+    &--contacts {
+      &::after {
+        width: 777px;
+        right: -818px;
+        top: 50%;
+      }
+    }
+
+    &--comment {
+      padding-top: 67px;
+
+      &::after {
+        width: 1111px;
+        right: -1149px;
+      }
+    }
+
     &--extra {
-      padding-top: 63px;
+      padding-top: 68px;
+      padding-bottom: 56px;
+
+      &::before {
+        top: 55%;
+      }
+
+      &::after {
+        width: 1078px;
+        right: -1119px;
+      }
     }
   }
 
   .main-form__btn-show {
     width: 568px;
-    margin-right: 80px;
+    margin-right: 83px;
   }
 
   .main-form__submit-section {
     padding: 0;
-    margin-top: 68px;
-    margin-bottom: 80px;
+    margin-top: 61px;
+    margin-bottom: 82px;
   }
 }

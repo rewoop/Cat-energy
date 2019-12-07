@@ -119,8 +119,33 @@
     justify-content: flex-end;
   }
 
+  .additional-goods__h2 {
+    text-align: left;
+
+    &::before {
+      .green-line-mobile;
+      width: 70px;
+      left: -110px;
+      top: 50%;
+      margin-top: 4px;
+    }
+
+    &::after {
+      width: 957px;
+      left: auto;
+      right: -917px;
+      top: 50%;
+      margin-top: 4px;
+      z-index: 0;
+    }
+  }
+
   .additional-goods__heading {
     margin-right: auto;
+  }
+
+  .additional-goods__list {
+    margin-top: 79px;
   }
 
   .additional-goods__order-btn {
