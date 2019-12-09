@@ -1,5 +1,5 @@
 .main-form {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .main-form__fieldset {
@@ -87,7 +87,7 @@
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
       border-radius: 15px;
-      margin-right: 13px;
+      margin-right: 14px;
     }
   }
 
@@ -218,8 +218,9 @@
 
     &::after {
       .green-line-mobile;
-      width: 99px;
-      right: -20px;
+      width: 8000px;
+      z-index: -1;
+      right: -7921px;
       top: 50%;
       margin-top: -10px;
     }
@@ -231,9 +232,10 @@
 
     &::after {
       .green-line-mobile;
-      width: 158px;
-      right: -180px;
-      top: 52%;
+      width: 8000px;
+      z-index: -1;
+      right: -8021px;
+      top: 51%;
     }
   }
 
@@ -243,9 +245,10 @@
 
     &::after {
       .green-line-mobile;
-      width: 136px;
-      right: -160px;
-      top: 52%;
+      width: 8000px;
+      z-index: -1;
+      right: -8023px;
+      top: 51%;
     }
   }
 }
@@ -436,24 +439,18 @@
 
   .main-form__legend {
     font-size: 36px;
+    padding: 0 40px;
     padding-top: 73px;
     padding-bottom: 76px;
     position: relative;
-
-    &::before {
-      .green-line-mobile;
-      width: 30px;
-      left: -70px;
-      top: 52%;
-    }
+    background-color: #ffffff;
+    margin-left: -40px;
 
     &--contacts {
       &::after {
-        width: 145px;
-        right: -185px;
-        left: auto;
-        top: 52%;
-        margin: 0;
+        right: -4000px;
+        top: 51.5%;
+        margin-top: 0;
       }
     }
 
@@ -461,14 +458,9 @@
       padding-top: 65px;
 
       &::after {
-        width: 479px;
-        right: -519px;
-        left: auto;
+        right: -4000px;
         top: 49%;
-      }
-
-      &::before {
-        top: 49%;
+        margin-top: 0;
       }
     }
 
@@ -476,15 +468,10 @@
       padding-top: 65px;
       padding-bottom: 57px;
 
-      &::before {
-        top: 55%;
-      }
-
       &::after {
-        width: 446px;
-        right: -486px;
-        left: auto;
+        right: -4000px;
         top: 55%;
+        margin-top: 0;
       }
     }
   }
@@ -628,16 +615,9 @@
     padding-top: 69px;
     padding-bottom: 76px;
 
-    &::before {
-      width: 70px;
-      left: -110px;
-      top: 50%;
-    }
-
     &--contacts {
       &::after {
-        width: 777px;
-        right: -818px;
+        right: -4000px;
         top: 50%;
       }
     }
@@ -646,8 +626,7 @@
       padding-top: 67px;
 
       &::after {
-        width: 1111px;
-        right: -1149px;
+        right: -4000px;
       }
     }
 
@@ -655,13 +634,9 @@
       padding-top: 68px;
       padding-bottom: 56px;
 
-      &::before {
-        top: 55%;
-      }
-
       &::after {
-        width: 1078px;
-        right: -1119px;
+        right: -4000px;
+        top: 56%;
       }
     }
   }
