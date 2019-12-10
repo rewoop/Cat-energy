@@ -34,10 +34,15 @@
   position: relative;
 
   & .page-footer__map-image {
-    width: 320px;
+    width: 6000px;
     height: 362px;
-    object-fit: cover;
-    object-position: bottom;
+    display: block;
+    background-image: url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: -2833px;
   }
 
   &::after {
@@ -79,6 +84,12 @@
     width: 768px;
     height: 396px;
 
+    & .page-footer__map-image {
+      height: 396px;
+      background-image: url("../img/bg-map-tablet@1x.png");
+      left: -2614px;
+    }
+
     &::after {
       width: 120px;
       height: 106px;
@@ -101,6 +112,12 @@
 
   .page-footer__map {
     width: 1440px;
+
+    & .page-footer__map-image {
+      height: 396px;
+      background-image: url("../img/bg-map-desktop@1x.png");
+      left: -1940px;
+    }
 
     &::after {
       left: auto;
