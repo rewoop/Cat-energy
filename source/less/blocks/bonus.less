@@ -5,7 +5,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: 35px;
   position: relative;
 
   &::before {
@@ -34,10 +33,15 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 708px;
     height: 200px;
-    padding-right: 120px;
-    padding-bottom: 65px;
+    padding-right: 124px;
+    padding-bottom: 72px;
     justify-content: flex-end;
-    margin-bottom: 74px;
+
+    &::before {
+      top: 65px;
+      left: 91px;
+      margin-left: 0;
+    }
   }
 
   .bonus__text {
@@ -52,9 +56,12 @@
     width: 245px;
     height: 289px;
     padding: 0 40px;
-    padding-bottom: 38px;
+    padding-bottom: 42px;
     justify-content: center;
-    margin: 0;
+
+    &::before {
+      left: 96px;
+    }
   }
 
   .bonus__text {

@@ -34,7 +34,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
-        <h1 class="page-main__heading">Подбор программы</h1>
+        <h1 class="page-main__heading page-main__heading--form">Подбор программы</h1>
       </div>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="page-main__wrapper main-form__form-wrapper main-form__form-wrapper--form">
@@ -47,11 +47,11 @@
         </div>
         <div class="main-form__program-wrapper">
           <fieldset class="main-form__fieldset main-form__fieldset--radio">
-            <input class="main-form__input main-form__input--radio" type="radio" name="program" value="slim" id="slim-radio" checked>
+            <input class="main-form__input main-form__input--radio visually-hidden" type="radio" name="program" value="slim" id="slim-radio" checked>
             <label for="slim-radio" class="main-form__label main-form__label--radio">Похудение</label>
-            <input class="main-form__input main-form__input--radio" type="radio" name="program" value="pro" id="pro-radio">
+            <input class="main-form__input main-form__input--radio visually-hidden" type="radio" name="program" value="pro" id="pro-radio">
             <label class="main-form__label main-form__label--radio" for="pro-radio">Набор массы</label>
-            <input class="main-form__input main-form__input--radio" type="radio" name="program" value="idk" id="idk-radio">
+            <input class="main-form__input main-form__input--radio visually-hidden" type="radio" name="program" value="idk" id="idk-radio">
             <label class="main-form__label main-form__label--radio" for="idk-radio">Не знаю (Нужен ваш совет)</label>
           </fieldset>
         </div>
@@ -70,13 +70,13 @@
           <fieldset class="main-form__fieldset">
             <legend class="main-form__legend main-form__legend--extra">Дополнительно</legend>
             <div class="main-form__fieldset-wrapper">
-              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="sugar" id="sugar-checkbox" checked>
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="sugar" id="sugar-checkbox" checked>
               <label class="main-form__label main-form__label--checkbox" for="sugar-checkbox"> Сахарозаменитель</label>
-              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="water" id="water-checkbox">
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="water" id="water-checkbox">
               <label class="main-form__label main-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
-              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="milk" id="milk-checkbox">
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk-checkbox">
               <label class="main-form__label main-form__label--checkbox" for="milk-checkbox">Молоко</label>
-              <input class="main-form__input main-form__input--checkbox" type="checkbox" name="vitamins" id="vitamins-checkbox">
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins-checkbox">
               <label class="main-form__label main-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
             </div>
           </fieldset>
@@ -95,9 +95,7 @@
         </div>
       </section>
       <div class="page-footer__map">
-        <img class="page-footer__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <!-- <img class="page-footer__map" src="img/bg-map-tablet@1x.png" width="768" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <img class="page-footer__map" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
+        <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575977550163!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-label="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
