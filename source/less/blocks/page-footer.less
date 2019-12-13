@@ -43,6 +43,11 @@
     position: absolute;
     top: 0;
     left: -2833px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-mobile@2x.png");
+      background-size: 320px auto;
+    }
   }
 
   &::after {
@@ -57,6 +62,12 @@
     left: 50%;
     top: 50%;
     margin: -39px 0 0 -28px;
+  }
+}
+
+.page-footer__del-after {
+  &::after {
+    content: none;
   }
 }
 
@@ -87,7 +98,12 @@
     & .page-footer__map-image {
       height: 396px;
       background-image: url("../img/bg-map-tablet@1x.png");
-      left: -2614px;
+      left: -2616px;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-map-tablet@2x.png");
+        background-size: 767px auto;
+      }
     }
 
     &::after {
@@ -116,7 +132,12 @@
     & .page-footer__map-image {
       height: 396px;
       background-image: url("../img/bg-map-desktop@1x.png");
-      left: -1940px;
+      left: -2280px;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-map-desktop@2x.png");
+        background-size: 1440px auto;
+      }
     }
 
     &::after {
