@@ -5,6 +5,13 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav-icons//favicon-16x16.png">
+    <link rel="manifest" href="img/fav-icons//site.webmanifest">
+    <link rel="mask-icon" href="img/fav-icons//safari-pinned-tab.svg" color="#68b738">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header class="page-header">
@@ -40,9 +47,11 @@
       </div>
       <ul class="page-main__list catalog-list">
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/chicken-small-tablet@1x.png" width="324" height="172" alt="Cat Energy PRO 500 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/chicken-small-desktop@1x.png" width="245" height="172" alt="Cat Energy PRO 500 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x , img/chicken-small-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy PRO 500 г</h3>
             <table class="catalog-list__properties properties">
@@ -64,9 +73,11 @@
           <button class="default-btn catalog-list__order-btn" type="button">Заказать</button>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/chicken-big-tablet@1x.png" width="324" height="208" alt="Cat Energy PRO 1000 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/chicken-big-desktop@1x.png" width="245" height="208" alt="Cat Energy PRO 1000 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x , img/chicken-big-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy PRO 1000 г</h3>
             <table class="catalog-list__properties properties">
@@ -88,9 +99,11 @@
           <button class="default-btn catalog-list__order-btn" type="button">Заказать</button>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/fish-small-tablet@1x.png" width="324" height="174" alt="Cat Energy PRO 500 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/fish-small-desktop@1x.png" width="245" height="174" alt="Cat Energy PRO 500 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x , img/fish-small-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy PRO 500 г</h3>
             <table class="catalog-list__properties properties">
@@ -112,9 +125,11 @@
           <button class="default-btn catalog-list__order-btn" type="button">Заказать</button>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/fish-big-tablet@1x.png" width="324" height="208" alt="Cat Energy PRO 1000 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/fish-big-desktop@1x.png" width="245" height="208" alt="Cat Energy PRO 1000 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x , img/fish-big-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy PRO 1000 г</h3>
             <table class="catalog-list__properties properties">
@@ -136,9 +151,11 @@
           <button class="default-btn catalog-list__order-btn" type="button">Заказать</button>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM 500 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/buckwheat-small-tablet@1x.png" width="324" height="174" alt="Cat Energy SLIM 500 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/buckwheat-small-desktop@1x.png" width="245" height="174" alt="Cat Energy SLIM 500 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x , img/buckwheat-small-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy SLIM 500 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy SLIM 500 г</h3>
             <table class="catalog-list__properties properties">
@@ -160,9 +177,11 @@
           <button class="default-btn catalog-list__order-btn" type="button">Заказать</button>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM 1000 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/buckwheat-big-tablet@1x.png" width="324" height="208" alt="Cat Energy SLIM 1000 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/buckwheat-big-desktop@1x.png" width="245" height="208" alt="Cat Energy SLIM 1000 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x , img/buckwheat-big-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy SLIM 1000 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy SLIM 1000 г</h3>
             <table class="catalog-list__properties properties">
@@ -184,9 +203,11 @@
           <button class="default-btn catalog-list__order-btn" type="button">Заказать</button>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__item-image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM 500 г">
-          <!-- <img class="catalog-list__item-image catalog-list__item-image--tablet" src="img/rice-small-tablet@1x.png" width="324" height="174" alt="Cat Energy SLIM 500 г">
-          <img class="catalog-list__item-image catalog-list__item-image--desktop" src="img/rice-small-desktop@1x.png" width="245" height="174" alt="Cat Energy SLIM 500 г"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x , img/rice-small-tablet@2x.png 2x">
+            <img class="catalog-list__item-image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy SLIM 500 г">
+          </picture>
           <div class="catalog-list__table-wrapper">
             <h3 class="catalog-list__heading catalog-item-heading">Cat Energy SLIM 500 г</h3>
             <table class="catalog-list__properties properties">
@@ -315,5 +336,6 @@
     </footer>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCajeNvj2B9o3rj9h_Z7L805CV8s_u929I&callback=GoogleReadyHandlereek8gaim" async defer></script>
     <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/picturefill.min.js" type="text/javascript"></script>
   </body>
 </html>

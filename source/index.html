@@ -5,6 +5,13 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav-icons//favicon-16x16.png">
+    <link rel="manifest" href="img/fav-icons//site.webmanifest">
+    <link rel="mask-icon" href="img/fav-icons//safari-pinned-tab.svg" color="#68b738">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header class="page-header">
@@ -39,9 +46,11 @@
         <div class="page-main__heading-section">
           <h1 class="page-main__intro">Функциональное питание для котов</h1>
           <p class="page-main__slogan">Занялся собой? Займись котом!</p>
-          <img class="page-main__product-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фото товара на главной">
-          <!-- <img class="page-main__product-image page-main__product-image--tablet" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Фото товара на главной">
-          <img class="page-main__product-image page-main__product-image--desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="Фото товара на главной"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="page-main__product-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Фото товара на главной">
+          </picture>
           <button class="default-btn page-main__create-programm" type="button">Подобрать программу</button>
         </div>
         <section class="diet-programs">
@@ -69,22 +78,22 @@
           <h2 class="about-programs__heading">Как это работает</h2>
           <ul class="about-program__list">
             <li class="about-program__item">
-              <img class="about-program__item-icon" src="img/advantage-leaf@1x.png" width="50" height="50" alt="Иконка лепестка">
+              <img class="about-program__item-icon" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" width="50" height="50" alt="Иконка лепестка">
               <span class="about-program__item-wrapper">Функциональное питание содержит только полезные питательные вещества.</span>
               <span class="about-program__item-number">1</span>
             </li>
             <li class="about-program__item">
-              <img class="about-program__item-icon" src="img/advantage-powder@1x.png" width="50" height="50" alt="Иконка порошка">
+              <img class="about-program__item-icon" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" width="50" height="50" alt="Иконка порошка">
               <span class="about-program__item-wrapper">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
               <span class="about-program__item-number">2</span>
             </li>
             <li class="about-program__item">
-              <img class="about-program__item-icon" src="img/advantage-dining@1x.png" width="50" height="50" alt="Иконка столовых приборов">
+              <img class="about-program__item-icon" src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" width="50" height="50" alt="Иконка столовых приборов">
               <span class="about-program__item-wrapper">Замените один-два приема обычной еды на наше функциональное питание.</span>
               <span class="about-program__item-number">3</span>
             </li>
             <li class="about-program__item">
-              <img class="about-program__item-icon" src="img/advantage-clock@1x.png" width="50" height="50" alt="Иконка часов">
+              <img class="about-program__item-icon" src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" width="50" height="50" alt="Иконка часов">
               <span class="about-program__item-wrapper">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</span>
               <span class="about-program__item-number">4</span>
             </li>
@@ -114,10 +123,16 @@
           <section class="living-example__slider before-after">
             <h3 class="visually-hidden">Фотографии результата замены корма</h3>
             <div class="before-after__wrapper">
-              <img class="before-after__image before-after__image--before-mobile" src="img/before-mobile@1x.png" width="311" height="232" alt="Фотография кота Бориса до использования Cat Energy Slim.">
-              <!-- <img class="before-after__image before-after__image--before-tablet-desktop" src="img/before-tablet@1x.png" width="690" height="517" alt="Фотография кота Бориса до использования Cat Energy Slim."> -->
-              <img class="before-after__image before-after__image--after-mobile" src="img/after-mobile@1x.png" width="311" height="232" alt="Фотография кота Бориса до использования Cat Energy Slim.">
-              <!-- <img class="before-after__image before-after__image--after-tablet-desktop" src="img/after-tablet@1x.png" width="690" height="517" alt="Фотография кота Бориса до использования Cat Energy Slim."> -->
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="before-after__image before-after__image--before-mobile" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фотография кота Бориса до использования Cat Energy Slim.">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="before-after__image before-after__image--after-mobile" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Фотография кота Бориса до использования Cat Energy Slim.">
+              </picture>
               <div class="before-after__btn-wrapper">
                 <button class="before-after__btn" type="button" name="before">Было</button>
                 <div class="before-after__strip">
@@ -169,5 +184,6 @@
     </footer>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCajeNvj2B9o3rj9h_Z7L805CV8s_u929I&callback=GoogleReadyHandlereek8gaim" async defer></script>
     <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/picturefill.min.js" type="text/javascript"></script>
   </body>
 </html>

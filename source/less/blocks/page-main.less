@@ -59,6 +59,11 @@
     background-color: #65a93c;
     background-position: center;
     margin-left: -1860px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -131,9 +136,11 @@
   }
 
   .page-main__product-image {
+    width: 709px;
+    height: 609px;
     display: block;
     position: absolute;
-    top: 192px;
+    top: 206px;
     left: 0;
     z-index: -1;
   }
@@ -198,13 +205,20 @@
       left: auto;
       right: -3389px;
       margin: 0;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 
   .page-main__product-image {
-    top: -84px;
+    width: 552px;
+    height: 499px;
+    top: -80px;
     left: 50%;
-    margin-left: -164px;
+    margin-left: -160px;
     z-index: 1;
   }
 
