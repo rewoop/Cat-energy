@@ -18,7 +18,7 @@ function GoogleReadyHandlereek8gaim() {
         position: {lat: 59.93874874610281, lng: 30.32306885767207},
         map: map,
         icon: {
-          url: "../img/map-pin.png",
+          url: "img/map-pin.png",
           scaledSize: new google.maps.Size(57, 54)
         },
         animation: google.maps.Animation.DROP,
@@ -42,7 +42,7 @@ function GoogleReadyHandlereek8gaim() {
         position: {lat: 59.93874874610281, lng: 30.32306885767207},
         map: map,
         icon: {
-          url: "../img/map-pin.png",
+          url: "img/map-pin.png",
           scaledSize: new google.maps.Size(120, 106)
         },
         animation: google.maps.Animation.DROP,
@@ -66,7 +66,7 @@ function GoogleReadyHandlereek8gaim() {
           position: {lat: 59.93874874610281, lng: 30.32306885767207},
           map: map,
           icon: {
-            url: "../img/map-pin.png",
+            url: "img/map-pin.png",
             scaledSize: new google.maps.Size(120, 106)
           },
           animation: google.maps.Animation.DROP,
