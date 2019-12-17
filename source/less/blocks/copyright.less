@@ -12,13 +12,31 @@
   font-size: 16px;
   line-height: 1;
   margin: 0;
+  text-decoration: none;
+
+  &:hover + .copyright__logo {
+    background-image: url("../img/htmlacademy--hover.svg");
+  }
+
+  &:active,
+  &:active + .copyright__logo {
+    opacity: 0.3;
+  }
 }
 
-.copyright__logo,
-.copyright__logo-image {
+.copyright__logo {
   width: 27px;
   height: 34px;
   display: inline-block;
+  background-image: url("../img/htmlacademy.svg");
+
+  &:hover {
+    background-image: url("../img/htmlacademy--hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

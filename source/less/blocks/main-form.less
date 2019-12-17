@@ -39,34 +39,10 @@
   &--email {
     margin-bottom: 14px;
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 18px;
-      height: 14px;
-      background-image: url("../img/icon-mail.svg");
-      position: absolute;
-      top: 50%;
-      right: 15px;
-      margin-top: -7px;
-    }
   }
 
   &--tel {
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 21px;
-      height: 21px;
-      background-image: url("../img/icon-phone.svg");
-      position: absolute;
-      top: 50%;
-      right: 13px;
-      margin-top: -10px;
-    }
   }
 
   &--radio {
@@ -88,6 +64,15 @@
       border: 1px solid #cdcdcd;
       border-radius: 15px;
       margin-right: 14px;
+      cursor: pointer;
+    }
+
+    &:hover::before {
+      border-color: #bababa;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -103,6 +88,14 @@
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
       margin-right: 16px;
+    }
+
+    &:hover::before {
+      border-color: #bababa;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -130,7 +123,19 @@
   font-style: normal;
   color: #444444;
   line-height: 1.13;
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:required {
+    border: 2px solid #ff8282;
+  }
 }
 
 .main-form__input {
@@ -159,6 +164,7 @@
       top: 50%;
       left: 9px;
       margin-top: -6px;
+      cursor: pointer;
     }
 
     &:focus + .main-form__label--radio::before {
@@ -193,19 +199,42 @@
     min-height: 45px;
     padding-left: 16px;
     position: relative;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 186px 14px;
+    background-size: 17px 13px;
+
+    &:focus {
+      background-image: url("../img/icon-mail--focus.svg");
+    }
+
+    &:required {
+      background-image: url("../img/icon-mail--required.svg");
+    }
   }
 
   &--tel {
     margin-left: 10px;
     min-height: 45px;
     padding-left: 14px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 171px 11px;
+    background-size: 20px 20px;
+
+    &:focus {
+      background-image: url("../img/icon-phone--focus.svg");
+    }
+
+    &:required {
+      background-image: url("../img/icon-phone--required.svg");
+    }
   }
 }
 
 .main-form__comments {
   width: 280px;
   height: 150px;
-  border: 1px solid #cdcdcd;
   resize: none;
   padding: 13px;
   margin-top: 4px;
@@ -322,16 +351,6 @@
 
     &--email {
       margin-bottom: 20px;
-
-      &::after {
-        right: 18px;
-      }
-    }
-
-    &--tel {
-      &::after {
-        right: 14px;
-      }
     }
 
     &--text:last-child {
@@ -416,12 +435,14 @@
       margin-left: 19px;
       min-height: 52px;
       padding: 0 20px;
+      background-position: 515px 19px;
     }
 
     &--tel {
       margin-left: 15px;
       min-height: 52px;
       padding: 0 18px;
+      background-position: 500px 16px;
     }
   }
 
@@ -571,19 +592,11 @@
     &--email {
       width: 570px;
       margin: 0;
-
-      &::after {
-        right: 20px;
-      }
     }
 
     &--tel {
       width: 570px;
       margin: 0;
-
-      &::after {
-        right: 18px;
-      }
     }
 
     &--checkbox {
@@ -604,6 +617,16 @@
       &::before {
         margin-right: 18px;
       }
+    }
+  }
+
+  .main-form__input {
+    &--email {
+      background-position: 447px 20px;
+    }
+
+    &--tel {
+      background-position: 430px 17px;
     }
   }
 
