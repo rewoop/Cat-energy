@@ -6,6 +6,7 @@ var beforeBtn = document.querySelector(".before-after__btn[name=before]");
 var afterBtn = document.querySelector(".before-after__btn[name=after]");
 var switchBtn = document.querySelector(".before-after__switch");
 
+
 if (mobileSize.matches) {
   afterBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -20,5 +21,16 @@ if (mobileSize.matches) {
     switchBtn.style.margin = "0 auto 0 0";
   });
 } else {
-  // СЮДА ВСТАВИТЬ СКРИПТ ДЛЯ ПЛАНШЕТА И ДЕСКТОПА
+  afterBtn.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    beforePic.style.display = "none";
+    afterPic.style.display = "block";
+    switchBtn.style.left = 100 + "%";
+  });
+  beforeBtn.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    beforePic.style.display = "block";
+    afterPic.style.display = "none";
+    switchBtn.style.left = 0;
+  });
 }
