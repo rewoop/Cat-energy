@@ -2,10 +2,10 @@
   padding-bottom: 42px;
 }
 
-.about-programs__heading {
+.about-program__heading {
   .text-style-h2;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .about-program__list {
@@ -22,7 +22,7 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 
   &::before {
@@ -31,15 +31,17 @@
     width: 60px;
     height: 60px;
     background-color: #68b738;
-    margin-right: 20px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
   }
 }
 
 .about-program__item-icon {
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  margin-top: -25px;
+  display: block;
+  margin-right: 26px;
+  margin-left: 5px;
 }
 
 .about-program__item-wrapper {
@@ -56,7 +58,7 @@
     padding: 0;
   }
 
-  .about-programs__heading {
+  .about-program__heading {
     font-size: 60px;
     line-height: 1;
     margin-top: 43px;
@@ -85,8 +87,6 @@
     &::before {
       width: 80px;
       height: 80px;
-      margin-right: 0;
-      margin-bottom: 32px;
     }
   }
 
@@ -106,9 +106,9 @@
   }
 
   .about-program__item-icon {
-    left: 15px;
-    top: 15px;
-    margin-top: 0;
+    margin-top: 15px;
+    margin-bottom: 47px;
+    margin-left: 14px;
   }
 
   .about-program__item-wrapper {
@@ -117,7 +117,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .about-programs__heading {
+  .about-program__heading {
     margin-top: 0;
     margin-bottom: 73px;
   }

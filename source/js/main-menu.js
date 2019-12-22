@@ -1,9 +1,11 @@
 var list = document.querySelector(".site-list");
+var toggle = document.querySelector(".page-header__toggle");
 var burger = document.querySelector(".page-header__toggle-image--burger");
 var cross = document.querySelector(".page-header__toggle-image--cross");
 var mobileSize = window.matchMedia("(max-width: 767px)");
 
 if (mobileSize.matches) {
+  toggle.style.display = "block";
   list.style.display = "none";
 } else {
   list.style.display = "flex";
