@@ -25,6 +25,28 @@
 .additional-goods__list {
   .mp-null;
   list-style: none;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #111111;
+    opacity: 0.1;
+    width: 280px;
+    margin: 21px 0 13px 0;
+  }
+}
+
+.additional-goods__item {
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #111111;
+    opacity: 0.1;
+    width: 280px;
+    margin: 17px 0 13px 0;
+  }
 }
 
 .additional-goods__heading {
@@ -32,15 +54,6 @@
   color: #222222;
   line-height: 1;
   margin: 0;
-}
-
-.additional-goods__line {
-  display: block;
-  height: 1px;
-  background-color: #111111;
-  opacity: 0.1;
-  width: 280px;
-  margin: 17px 0 13px 0;
 }
 
 .additional-goods__properties {
@@ -74,12 +87,12 @@
     }
   }
 
-  .additional-goods__line {
-    display: none;
-  }
-
   .additional-goods__list {
     margin-top: 81px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .additional-goods__item {
@@ -96,6 +109,10 @@
 
     &:not(:first-child) {
       margin-top: -1px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
