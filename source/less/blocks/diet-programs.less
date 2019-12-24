@@ -54,6 +54,17 @@
   line-height: 1.29;
   margin: 0;
   margin-top: 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #111111;
+    opacity: 0.1;
+    width: 240px;
+    margin-top: 21px;
+    margin-bottom: 20px;
+  }
 }
 
 .diet-programs__link {
@@ -83,16 +94,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.diet-programs__line {
-  display: block;
-  height: 1px;
-  background-color: #111111;
-  opacity: 0.1;
-  width: 240px;
-  margin-top: 21px;
-  margin-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -152,6 +153,10 @@
 
     &--mass {
       max-width: 340px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 

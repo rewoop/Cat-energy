@@ -75,11 +75,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__line {
-    width: auto;
-    margin: 0 auto;
-    border: 1px solid #e6e6e6;
-    display: block;
+  .page-main__living-example-background {
+    border-top: 1px solid #e6e6e6;
     margin-top: -32px;
   }
 
@@ -160,8 +157,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main__line {
-    display: none;
+  .page-main__living-example-background {
+    border-top: none;
+    margin-top: 0;
+    width: auto;
+    background-color: #f2f2f2;
   }
 
   .page-main__wrapper {
@@ -224,11 +224,6 @@
     left: 50%;
     margin-left: -160px;
     z-index: 1;
-  }
-
-  .page-main__living-example-background {
-    width: auto;
-    background-color: #f2f2f2;
   }
 
   .page-main__living-example {
