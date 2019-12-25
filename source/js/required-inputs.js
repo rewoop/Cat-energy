@@ -5,6 +5,11 @@ var weight = form.querySelector("[name=weight]");
 var email = form.querySelector("[name=email]");
 var tel = form.querySelector("[name=tel]");
 
+login.removeAttribute("required");
+weight.removeAttribute("required");
+email.removeAttribute("required");
+tel.removeAttribute("required");
+
 form.addEventListener("submit", function(evt) {
   if (!login.value || !weight.value || !email.value || !tel.value) {
     evt.preventDefault();

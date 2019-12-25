@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
 
     <!-- favicons here -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icons/apple-touch-icon.png">
@@ -32,8 +33,12 @@
             </picture>
           </a>
           <a href="#" class="page-header__toggle">
-            <img class="page-header__toggle-image page-header__toggle-image--burger" src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню">
-            <img class="page-header__toggle-image page-header__toggle-image--cross" src="img/icon-close.svg" width="19" height="19" alt="Открыть меню">
+            <svg class="page-header__toggle-image page-header__toggle-image--burger" width="25" height="19" aria-label="Открыть меню">
+              <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+            <svg class="page-header__toggle-image page-header__toggle-image--cross" width="19" height="19" aria-label="Закрыть меню">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
           </a>
         </div>
         <nav class="main-nav">
@@ -58,8 +63,8 @@
           <div class="page-main__wrapper main-form__form-wrapper main-form__form-wrapper--form">
             <fieldset class="main-form__fieldset main-form__fieldset--form">
               <p class="main-form__send-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
-              <label class="main-form__label main-form__label--text">Имя:*<input class="main-form__input main-form__input--text" type="text" name="name" placeholder="Барсик"></label>
-              <label class="main-form__label main-form__label--text">Вес (кг):*<input class="main-form__input main-form__input--text" type="text" name="weight" placeholder="7"></label>
+              <label class="main-form__label main-form__label--text">Имя:*<input class="main-form__input main-form__input--text" type="text" name="name" placeholder="БАРСИК" required></label>
+              <label class="main-form__label main-form__label--text">Вес (кг):*<input class="main-form__input main-form__input--text" type="text" name="weight" placeholder="7" required></label>
               <label class="main-form__label main-form__label--text">Возраст (лет):<input class="main-form__input main-form__input--text" type="text" name="age" placeholder="7"></label>
             </fieldset>
           </div>
@@ -77,24 +82,24 @@
             <fieldset class="main-form__fieldset">
               <legend class="main-form__legend main-form__legend--contacts">Контактные данные (владельца кота)</legend>
               <div class="main-form__contacts-wrapper">
-                <label class="main-form__label main-form__label--email">E-mail:*<input class="main-form__input main-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
-                <label class="main-form__label main-form__label--tel">Телефон:*<input class="main-form__input main-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
+                <label class="main-form__label main-form__label--email">E-mail:*<input class="main-form__input main-form__input--email" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required></label>
+                <label class="main-form__label main-form__label--tel">Телефон:*<input class="main-form__input main-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
               </div>
             </fieldset>
             <fieldset class="main-form__fieldset">
               <legend class="main-form__legend main-form__legend--comment">Комментарий</legend>
-              <textarea class="main-form__comments" name="comment" rows="10" cols="38" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="main-form__comments" name="comment" rows="10" cols="38" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
             </fieldset>
             <fieldset class="main-form__fieldset">
               <legend class="main-form__legend main-form__legend--extra">Дополнительно</legend>
               <div class="main-form__fieldset-wrapper">
-                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="sugar" id="sugar-checkbox" checked>
-                <label class="main-form__label main-form__label--checkbox" for="sugar-checkbox"> Сахарозаменитель</label>
-                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="water" id="water-checkbox">
+                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="extra-checkbox" value="sugar" id="sugar-checkbox" checked>
+                <label class="main-form__label main-form__label--checkbox" for="sugar-checkbox">Сахарозаменитель</label>
+                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="extra-checkbox" value="water" id="water-checkbox">
                 <label class="main-form__label main-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
-                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk-checkbox">
+                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="extra-checkbox" value="milk" id="milk-checkbox">
                 <label class="main-form__label main-form__label--checkbox" for="milk-checkbox">Молоко</label>
-                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins-checkbox">
+                <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="extra-checkbox" value="vitamins" id="vitamins-checkbox">
                 <label class="main-form__label main-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
               </div>
             </fieldset>
@@ -117,28 +122,26 @@
         </div>
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+            <svg class="page-footer__logo-image" width="128" height="24" aria-label="Логотип Кэт энерджи">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
           </a>
-          <span class="page-footer__line"></span>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item social__item--vk">
-                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Группа академии Вконтакте"></a>
               </li>
               <li class="social__item social__item--inst">
-                <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy"></a>
+                <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм академии"></a>
               </li>
               <li class="social__item social__item--fb">
-                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"></a>
+                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук академии"></a>
               </li>
             </ul>
           </div>
-          <span class="page-footer__line"></span>
           <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-            </a>
+            <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии"></a>
           </div>
         </div>
       </footer>

@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
 
     <!-- favicons here -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icons/apple-touch-icon.png">
@@ -32,8 +33,12 @@
             </picture>
           </a>
           <a href="#" class="page-header__toggle">
-            <img class="page-header__toggle-image page-header__toggle-image--burger" src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню">
-            <img class="page-header__toggle-image page-header__toggle-image--cross" src="img/icon-close.svg" width="19" height="19" alt="Открыть меню">
+            <svg class="page-header__toggle-image page-header__toggle-image--burger" width="25" height="19" aria-label="Открыть меню">
+              <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+            <svg class="page-header__toggle-image page-header__toggle-image--cross" width="19" height="19" aria-label="Закрыть меню">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
           </a>
         </div>
         <nav class="main-nav">
@@ -84,7 +89,7 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item">
             <a href="catalog-item.html" class="catalog-list__heading-link">
@@ -115,7 +120,7 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item">
             <a href="catalog-item.html" class="catalog-list__heading-link">
@@ -146,7 +151,7 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item">
             <a href="catalog-item.html" class="catalog-list__heading-link">
@@ -177,7 +182,7 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item">
             <a href="catalog-item.html" class="catalog-list__heading-link">
@@ -208,7 +213,7 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item">
             <a href="catalog-item.html" class="catalog-list__heading-link">
@@ -239,7 +244,7 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item">
             <a href="catalog-item.html" class="catalog-list__heading-link">
@@ -270,19 +275,18 @@
                 </tr>
               </table>
             </div>
-            <button class="default-btn catalog-list__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+            <a class="default-btn catalog-list__order-btn" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__item show-more">
             <h3 class="show-more__heading">Показать еще 100500 товаров</h3>
             <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-            <button class="default-btn show-more__show-btn" onclick="getProducts(event)" type="button">Показать все</button>
+            <a class="default-btn show-more__show-btn" href="show-more.html">Показать все</a>
           </li>
         </ul>
         <div class="page-main__wrapper page-main__wrapper--catalog">
           <div class="page-main__additional-goods-wrapper">
             <section class="additional-goods">
               <h2 class="additional-goods__h2">Дополнительные товары</h2>
-              <span class="additional-goods__line"></span>
               <ul class="additional-goods__list">
                 <li class="additional-goods__item">
                   <h3 class="additional-goods__heading">Сахарозаменитель</h3>
@@ -293,21 +297,19 @@
                       <td class="properties__value properties__value--goods">200 Р.</td>
                     </tr>
                   </table>
-                  <button class="default-btn additional-goods__order-btn" onclick="openPopup(event)" type="button">Заказать</button>
+                  <a class="default-btn additional-goods__order-btn" href="order.html">Заказать</a>
                 </li>
-                <li class="additional-goods__line"></li>
                 <li class="additional-goods__item">
                   <h3 class="additional-goods__heading">Питьевая вода</h3>
                   <table class="additional-goods__properties properties properties--goods">
                     <caption class="visually-hidden">Описание товара и цена</caption>
                     <tr class="properties__string properties__string--goods">
                       <td class="properties__field properties__field--goods">5 литров</td>
-                      <td class="properties__value properties__value--goods">50 Р.</td>
+                      <td class="properties__value properties__value--goods properties__value--goods-small">50 Р.</td>
                     </tr>
                   </table>
-                  <button class="additional-goods__order-btn default-btn" onclick="openPopup(event)" type="button">Заказать</button>
+                  <a class="default-btn additional-goods__order-btn" href="order.html">Заказать</a>
                 </li>
-                <li class="additional-goods__line"></li>
                 <li class="additional-goods__item">
                   <h3 class="additional-goods__heading">Молоко</h3>
                   <table class="additional-goods__properties properties properties--goods">
@@ -317,9 +319,8 @@
                       <td class="properties__value properties__value--goods">100 Р.</td>
                     </tr>
                   </table>
-                  <button class="additional-goods__order-btn default-btn" onclick="openPopup(event)" type="button">Заказать</button>
+                  <a class="default-btn additional-goods__order-btn" href="order.html">Заказать</a>
                 </li>
-                <li class="additional-goods__line"></li>
                 <li class="additional-goods__item">
                   <h3 class="additional-goods__heading">Витамины</h3>
                   <table class="additional-goods__properties properties properties--goods">
@@ -329,9 +330,8 @@
                       <td class="properties__value properties__value--goods">300 Р.</td>
                     </tr>
                   </table>
-                  <button class="additional-goods__order-btn default-btn" onclick="openPopup(event)" type="button">Заказать</button>
+                  <a class="default-btn additional-goods__order-btn" href="order.html">Заказать</a>
                 </li>
-                <li class="additional-goods__line"></li>
               </ul>
             </section>
           </div>
@@ -353,28 +353,26 @@
         </div>
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+            <svg class="page-footer__logo-image" width="128" height="24" aria-label="Логотип Кэт энерджи">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
           </a>
-          <span class="page-footer__line"></span>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item social__item--vk">
-                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Группа академии Вконтакте"></a>
               </li>
               <li class="social__item social__item--inst">
-                <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy"></a>
+                <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм академии"></a>
               </li>
               <li class="social__item social__item--fb">
-                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"></a>
+                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук академии"></a>
               </li>
             </ul>
           </div>
-          <span class="page-footer__line"></span>
           <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-            </a>
+            <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии"></a>
           </div>
         </div>
       </footer>

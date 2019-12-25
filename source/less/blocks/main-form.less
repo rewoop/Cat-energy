@@ -147,6 +147,10 @@
     margin-left: 13px;
     min-height: 45px;
     padding-left: 16px;
+
+    &:focus {
+      padding-left: 15px;
+    }
   }
 
   &--radio {
@@ -206,10 +210,12 @@
 
     &:focus {
       background-image: url("../img/icon-mail--focus.svg");
+      padding-left: 15px;
     }
 
     &:required {
       background-image: url("../img/icon-mail--required.svg");
+      padding-left: 15px;
     }
   }
 
@@ -224,10 +230,12 @@
 
     &:focus {
       background-image: url("../img/icon-phone--focus.svg");
+      padding-left: 13px;
     }
 
     &:required {
       background-image: url("../img/icon-phone--required.svg");
+      padding-left: 13px;
     }
   }
 }
@@ -238,6 +246,10 @@
   resize: none;
   padding: 13px;
   margin-top: 4px;
+
+  &:focus {
+    padding: 12px;
+  }
 }
 
 .main-form__legend {
@@ -409,6 +421,10 @@
       min-height: 52px;
       margin-left: 18px;
       padding-left: 17px;
+
+      &:focus {
+        padding-left: 16px;
+      }
     }
 
     &--radio {
@@ -436,6 +452,14 @@
       min-height: 52px;
       padding: 0 20px;
       background-position: 515px 19px;
+
+      &:focus {
+        padding-left: 19px;
+      }
+
+      &:required {
+        padding-left: 19px;
+      }
     }
 
     &--tel {
@@ -443,6 +467,14 @@
       min-height: 52px;
       padding: 0 18px;
       background-position: 500px 16px;
+
+      &:focus {
+        padding-left: 17px;
+      }
+
+      &:required {
+        padding-left: 17px;
+      }
     }
   }
 
@@ -452,6 +484,10 @@
     resize: none;
     padding: 14px 18px;
     margin-top: 0;
+
+    &:focus {
+      padding: 13px 17px;
+    }
   }
 
   .main-form__program-wrapper {
@@ -516,6 +552,8 @@
   }
 
   .main-form__btn-show {
+    min-width: auto;
+    min-height: auto;
     width: 283px;
     height: 52px;
     font-size: 20px;

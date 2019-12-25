@@ -23,7 +23,7 @@ gulp.task("sprite", function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("srpite.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
 });
 
@@ -39,7 +39,9 @@ gulp.task("images", function () {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
-    ]))
+    ], {
+      verbose: true
+    }))
     .pipe(gulp.dest("build/img"));
 });
 

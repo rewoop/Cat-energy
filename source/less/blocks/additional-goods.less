@@ -1,5 +1,5 @@
 .additional-goods {
-  padding: 28px 0 25px 0;
+  padding: 28px 0 27px 0;
 
   & > .additional-goods__line {
     margin: 20px 0 15px 0;
@@ -25,6 +25,28 @@
 .additional-goods__list {
   .mp-null;
   list-style: none;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #111111;
+    opacity: 0.1;
+    width: 280px;
+    margin: 21px 0 13px 0;
+  }
+}
+
+.additional-goods__item {
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #111111;
+    opacity: 0.1;
+    width: 280px;
+    margin: 16px 0 13.5px 0;
+  }
 }
 
 .additional-goods__heading {
@@ -34,18 +56,16 @@
   margin: 0;
 }
 
-.additional-goods__line {
-  display: block;
-  height: 1px;
-  background-color: #111111;
-  opacity: 0.1;
+.additional-goods__properties {
+  margin: 6px 0 12px 0;
   width: 280px;
-  margin: 17px 0 13px 0;
 }
 
-.additional-goods__properties {
-  margin: 8px 0 12px 0;
-  width: 280px;
+.additional-goods__order-btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,12 +87,12 @@
     }
   }
 
-  .additional-goods__line {
-    display: none;
-  }
-
   .additional-goods__list {
     margin-top: 81px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .additional-goods__item {
@@ -90,6 +110,10 @@
     &:not(:first-child) {
       margin-top: -1px;
     }
+
+    &::after {
+      display: none;
+    }
   }
 
   .additional-goods__properties {
@@ -103,6 +127,8 @@
   }
 
   .additional-goods__order-btn {
+    min-width: auto;
+    min-height: auto;
     width: 633px;
     height: 40px;
   }

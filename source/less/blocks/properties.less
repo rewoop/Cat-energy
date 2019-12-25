@@ -4,9 +4,9 @@
 }
 
 .properties__string {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: -1.5px;
+  display: block;
+  margin-bottom: -4px;
+  min-width: 140px;
 
   &--goods {
     margin: 0 -4px;
@@ -19,10 +19,20 @@
   color: #444444;
   line-height: 1.33;
   border: none;
+  width: 50%;
+  display: inline-block;
 
   &--goods {
     font-size: 14px;
     line-height: 1;
+  }
+}
+
+.properties__value {
+  text-align: right;
+
+  &--goods {
+    text-align: right;
   }
 }
 
@@ -34,27 +44,31 @@
   .properties__string {
     border-bottom: 1px solid #cdcdcd;
     padding: 5px 0;
+    margin-bottom: -1.5px;
 
     &--goods {
       border: none;
       padding: 0;
-      justify-content: flex-end;
-    }
-  }
-
-  .properties__field,
-  .properties__value {
-    font-size: 16px;
-
-    &--goods {
       text-align: right;
     }
   }
 
-  .properties__value {
+  .properties__field {
+    font-size: 16px;
+
     &--goods {
-      margin-left: 50px;
+      width: auto;
+      margin-right: 52px;
+    }
+  }
+
+  .properties__value {
+    font-size: 16px;
+
+    &--goods {
+      width: auto;
       min-width: 45px;
+      margin-left: -4px;
     }
   }
 }
@@ -71,15 +85,26 @@
 
   .properties__string {
     &--goods {
-      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .properties__field {
+    &--goods {
+      width: 50%;
+      margin-right: 0;
     }
   }
 
   .properties__value {
     &--goods {
+      width: 50%;
       min-width: 45px;
-      text-align: left;
       margin: 0;
+    }
+
+    &--goods-small {
+      margin-left: -11px;
     }
   }
 }
