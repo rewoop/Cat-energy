@@ -32,8 +32,12 @@
             </picture>
           </a>
           <a href="#" class="page-header__toggle">
-            <img class="page-header__toggle-image page-header__toggle-image--burger" src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню">
-            <img class="page-header__toggle-image page-header__toggle-image--cross" src="img/icon-close.svg" width="19" height="19" alt="Открыть меню">
+            <svg class="page-header__toggle-image page-header__toggle-image--burger" width="25" height="19" aria-label="Открыть меню">
+              <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+            <svg class="page-header__toggle-image page-header__toggle-image--cross" width="19" height="19" aria-label="Закрыть меню">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
           </a>
         </div>
         <nav class="main-nav">
@@ -348,7 +352,9 @@
         </div>
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+            <svg class="page-footer__logo-image" width="128" height="24" aria-label="Логотип Кэт энерджи">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
@@ -364,10 +370,8 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-            </a>
+            <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии"></a>
           </div>
         </div>
       </footer>
